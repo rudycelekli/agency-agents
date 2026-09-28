@@ -32,3 +32,6 @@ jobs:
 
       - name: Validate agent selection (install.sh --agent / --agents-file)
         run: bash scripts/test-agent-selection.sh
+
+      - name: Detect existing custom tool destinations
+        run: bash scripts/test-detect-configured-paths.sh
